@@ -33,4 +33,3 @@ $data = [
 ];
 
 $response = $fb->post('/me/messages', $data, $access_token);
-

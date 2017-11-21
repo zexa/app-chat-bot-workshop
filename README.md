@@ -35,8 +35,12 @@
     1. Fill url you got from `ngrok` setup - do not press `Next`, you will get an error ![](doc/3.png)
     1. In another browser tab go to [Facebook Apps](https://developers.facebook.com/apps)
     1. Click on App with your chat bot name (You filled it in `Step 3`)
-    1. Save the `App ID` and `App Secret` - in configuration file
+    1. Save the `App ID` and `App Secret` - in configuration file ![](doc/4.png)
     1. Go to `Messenger` in `Products` sidebar
-    1. Under `Token Generation` select `Page` with same name as your chat bot name, save the `Page Access Token` in configuration
+    1. Under `Token Generation` select `Page` with same name as your chat bot name, save the `Page Access Token` in configuration ![](doc/5.png)
     1. Go to previous browser tab and click `Next` in `Step 5`
  1. If everything was according to plan, you can open Messenger, search for chat bot and he should reply to you.
+
+ #### Changed ngrok hostname?
+ In case you restarted `ngrok`, you will receive a new public hostname, you need to change it in `App Webhooks`
+ ![](doc/6.png)
