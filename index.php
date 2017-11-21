@@ -2,10 +2,10 @@
 
 include (__DIR__ . '/vendor/autoload.php');
 
-$access_token = 'EAAE2Y3KjNyYBAHpKjqSZAmGN8YvpkC09Duh1deYrqV4ZC2NrOpPgbo9b4njEZCJOkusX8Yw1b6JiXX4ukvXIZBtn5ZCZBZBbfEa6VQV46p6P8O0MZAjNUIgNZAZAUrHOfVCqRPdO5v7ECtCZCok5es60GPmyVNHEUfbjZCldFmxk9qsNp9kfa8ZCTG45j';
+$access_token = 'your_access_token_here';
 $verify_token = 'TOKEN';
-$appId = '341275729671974';
-$appSecret = 'f7fbe7249cdffb4563e6635682a2eee2';
+$appId = 'your_app_id_here';
+$appSecret = 'your_app_secret_here';
 
 if(isset($_REQUEST['hub_challenge'])) {
     $challenge = $_REQUEST['hub_challenge'];

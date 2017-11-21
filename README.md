@@ -2,6 +2,7 @@
 
 ### Requirements
  * `PHP >=5.5`
+ * `composer`
  * [ngrok](https://ngrok.com/download)
  * Facebook Account
  
@@ -9,6 +10,7 @@
  
  #### PHP server
  For simplicity of this task, we will use built-in PHP server.
+ * install dependencies with `composer install`
  * from project's directory run in console `php -S localhost:{random_port}` please use any number between 1024 and 65535 for `{random_port}`.
  * check local PHP server is running - in browser go to `http://localhost:{random_port}/` - you should see a blank page.
  
