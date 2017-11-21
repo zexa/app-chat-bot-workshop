@@ -15,6 +15,11 @@ if(isset($_REQUEST['hub_challenge'])) {
 }
 
 $input = json_decode(file_get_contents('php://input'), true);
+
+if ($input === null) {
+    exit;
+}
+
 $message = $input['entry'][0]['messaging'][0]['message']['text'];
 $sender = $input['entry'][0]['messaging'][0]['sender']['id'];
 
