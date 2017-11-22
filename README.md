@@ -11,14 +11,14 @@
  #### PHP server
  For simplicity of this task, we will use built-in PHP server.
  * install dependencies with `composer install`
- * from project's directory run in console `php -S localhost:{random_port}` please use any number between 1024 and 65535 for `{random_port}`.
- * check local PHP server is running - in browser go to `http://localhost:{random_port}/` - you should see a blank page.
+ * from project's directory run in console `php -S localhost:9999`.
+ * check local PHP server is running - in browser go to `http://localhost:9999/` - you should see a blank page.
  
  #### ngrok
  Ngrok is local proxy allowing your PC to be accessible from Internet.
  * download `ngrok` from https://ngrok.com/download and extract it in project directory.
  * make sure it is executable - run in console: `./ngrok`.
- * start `ngrok` to have public proxy - `./ngrok http {random_port}` - here `{random_port}` is from step above.
+ * start `ngrok` to have public proxy - `./ngrok http 9999`.
  * make sure everything is OK with `ngrok` by going to [http://127.0.0.1:4040/inspect/http](http://127.0.0.1:4040/inspect/http)
 
  #### Facebook App Setup
