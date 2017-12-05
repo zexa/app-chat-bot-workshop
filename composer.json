@@ -2,17 +2,6 @@
     "name": "paysera/app-chat-bot-workshop",
     "description": "A simple chat bot Workshop",
     "type": "project",
-    "scripts": {
-        "post-install-cmd": [
-            "@downloadNgrok"
-        ],
-        "post-update-cmd": [
-            "@downloadNgrok"
-        ],
-        "downloadNgrok": [
-            "wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O t.z; unzip -o t.z; rm t.z"
-        ]
-    },
     "require": {
         "facebook/graph-sdk": "^5.6"
     }
