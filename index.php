@@ -29,6 +29,7 @@ $fb = new \Facebook\Facebook([
 ]);
 
 $data = [
+    'messaging_type' => 'RESPONSE',
     'recipient' => [
         'id' => $sender,
     ],
