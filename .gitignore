@@ -1,3 +1,6 @@
 vendor/
+bin/
 composer.lock
 ngrok*
+config.json
+session.csv
