@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 include (__DIR__ . '/vendor/autoload.php');
 
-$configuration = new Configuration(__DIR__ . 'config.json');
+$configuration = new Configuration(__DIR__ . '/config.json');
 $request = Request::createFromGlobals();
 
 if ($request->get(Hub::HUB_CHALLENGE) !== null) {
