@@ -23,24 +23,20 @@
 
  #### Facebook App Setup
  
- 1. Go to [Messenger API platform](https://developers.facebook.com/docs/messenger-platform) and click `Try It now`
+ 1. Chatbot will need a facebook page to work. Create page in facebook if you don't have one 
+ 1. Go to [Developer facebook.com](https://developers.facebook.com/docs/messenger-platform) and click `Add new App`
   ![](doc/1.png)
+    1. Enter the name of your app (ex. Chatbot workshop)
 
- 1. Launch Test Drive: ![](doc/2.png)
+ 1. You will be redirected to you project configuration page
  1. Fill required steps: 
-    1. Check the checkbox
-    1. Skip Node.JS installation
-    1. Enter chat bot name - must start with capital letter
-    1. Skip package download - we do not need it
-    1. Fill url you got from `ngrok` setup - do not press `Next`, you will get an error ![](doc/3.png)
-    1. In another browser tab go to [Facebook Apps](https://developers.facebook.com/apps)
-    1. Click on App with your chat bot name (You filled it in `Step 3`)
-    1. Save the `App ID` and `App Secret` - in configuration file ![](doc/4.png)
-    1. Go to `Messenger` in `Products` sidebar
-    1. Under `Token Generation` select `Page` with same name as your chat bot name, save the `Page Access Token` in configuration ![](doc/5.png)
-    1. Go to previous browser tab and click `Next` in `Step 5`
+    1. Get your `App id` and `App secret` ![](doc/2.png)
+    1. Add messenger product to your application ![](doc/3.png)
+    1. Select page that will use this app (may require to add permissions). `Page Access Token` will be generated. Add it to your application ![](doc/4.png)
+    1. Click `Subscribe To Events` in `Webhooks` section
+    1. Fill url you got from `ngrok` setup, other fields should be as it is in screenshot. ![](doc/5.png) 
+    1. Select a page to subscribe your webhook to the page events ![](doc/6.png)
  1. If everything was according to plan, you can open Messenger, search for chat bot and he should reply to you.
 
  #### Changed ngrok hostname?
  In case you restarted `ngrok`, you will receive a new public hostname, you need to change it in `App Webhooks`
- ![](doc/6.png)
