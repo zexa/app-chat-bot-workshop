@@ -24,7 +24,7 @@
  #### Facebook App Setup
  
  1. Chatbot will need a facebook page to work. Create page in facebook if you don't have one 
- 1. Go to [Developer facebook.com](https://developers.facebook.com/docs/messenger-platform) and click `Add new App`
+ 1. Go to [Developer facebook.com](https://developers.facebook.com) and click `Add new App`
   ![](doc/1.png)
     1. Enter the name of your app (ex. Chatbot workshop)
 
